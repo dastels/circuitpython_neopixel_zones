@@ -3,7 +3,7 @@ from random import randint
 import digitalio
 import board
 import neopixel
-from neopixel_zones import Zone, ZoneCollection
+import neopixel_zones
 
 enable = digitalio.DigitalInOut(board.D10)
 enable.direction = digitalio.Direction.OUTPUT
@@ -11,7 +11,7 @@ enable.value = True
 
 strip = neopixel.NeoPixel(board.D5, 60, brightness=1, auto_write=False)
 
-collection = ZoneCollection(strip)
+collection = neopixel_zones.ZoneCollection(strip)
 
 zone_1 = collection.add_zone(0, 20)
 zone_2 = collection.add_zone_with_size(20, 20)

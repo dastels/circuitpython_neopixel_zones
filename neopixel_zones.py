@@ -26,8 +26,6 @@ Neopixel zone support
 * Author: Dave Astels
 """
 
-from neopixel import NeoPixel
-
 
 class ZoneCollection:
     """Manage a collection of zones, projecting them onto a physical collection of NeoPixels."""
@@ -75,6 +73,7 @@ class Zone:
     def __init__(self, first, last_plus_one):
         self._first = first
         self._last_plus_one = last_plus_one
+        self._collection = None
 
     @property
     def collection(self):
