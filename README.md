@@ -31,4 +31,4 @@ As can slices:
 
 If the NeoPixel is created with `auto_write=False`, it can be updated by calling its `show()` method, the `ZoneCollection`'s or a `Zone`'s. Calling `show()` on a `Zone` will cause `show()` to be called on its collection, updating all the zones.
 
-See code.py for more exampl usage.
+See code.py for more usage examples
