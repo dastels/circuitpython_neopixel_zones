@@ -28,13 +28,7 @@ Neopixel zone support
 
 
 class ZoneCollection:
-    """Manage a collection of zones, projecting them onto a physical collection of NeoPixels."""
-
     def __init__(self, pixels):
-        """Create a zone collection on top of a NeoPixel instance.
-
-        :param neopixel.NeoPixel strip: the physical NeoPixel strip backing the collection
-        """
         self._pixels = pixels
         self._zones = []
 
@@ -52,7 +46,6 @@ class ZoneCollection:
 
     @property
     def brightness(self):
-        """Overall brightness of the pixel"""
         return self._pixels.brightness
 
     @brightness.setter
