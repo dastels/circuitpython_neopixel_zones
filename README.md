@@ -1,5 +1,7 @@
 Logical NeoPixel chains
 
+Inspired by a discussion with jim_lee on the Adafruit forums.
+
 This lets you layer logical groups of NeoPixels over a longer physical strip/ring. It lets you treat contiguous subsets of pixels as separate strips.
 
 Setup requires 3 steps:
